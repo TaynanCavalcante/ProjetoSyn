@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+:root{
+    --primary: #8701CF;
+    --secundary: #FF7B29;
+    --text-color: #fff;
+
+}
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.logo{
+    position: absolute;
+    width: 11em;
+    height: 4em;
+    left: 15em;
+    top: 2em;
+}
+
+#conteudo1{
+    background: var(--primary);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+
+}
+
+#conteudo1-text {
+    flex-direction: column;
+}
+
+.conteudo1-text-titulo{
+    font-size: 5em;
+    margin-bottom: 1em;
+    margin-left: 2.9em;
+    max-width: 80%;
+}
+
+.conteudo1-text-subtitulo{
+    font-size: 2em;
+    margin-left: 7em;
+    font-weight: lighter;
+    max-width: 70%;
+    margin-bottom: 1em;
+}
+
+.imagem1{
+    width: 43em;
+    margin-right: 10em;
+    max-width: 50%;
+}
+
+#conteudo-mid{
+    background: var(--secundary);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.conteudo2-text-titulo{
+    position: absolute;
+    font-size: 6em;
+    top: 10em;
+    left: 2.3em;
+    max-width: 70%;
+}
+
+.conteudo2-text-subtitulo{
+    font-size: 2.2em;
+    margin-left: 6.3em;
+    font-weight: lighter;
+    max-width: 70%;
+    margin-top: 8em;
+}
+
+.conteudo2-text-subtitulo-pt2{
+    font-size: 2.2em;
+    margin-left: 6.3em;
+    font-weight: lighter;
+    max-width: 70%;
+}
+
+.imagem2{
+    width: 45em;
+    margin-right: 10em;
+    max-width: 50%;
+    margin-bottom: -12em;
+}
+
+#formulario{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    color: var(--text-color);
+}
+
+.conteudo-imagem{
+    background: var(--primary);
+    width: 50%;
+    align-content: center;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.conteudo3-text{
+    background: var(--secundary);
+    width: 50%;
+}
+
+.conteudo3-text-titulo{
+    font-size: 2em;
+    top: 10em;
+    margin-left: 5em;
+    max-width: 50%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.imagem3{
+    max-width: 70%;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+
+.conteudo3-text{
+    padding: 5em;
+}
+
+.conteudo3-text-subtitulo{
+    font-size: 2em;
+    margin-left: 5em;
+    margin-bottom: 1.5em;
+    max-width: 60%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5em;
+    align-items:baseline;
+    font-size: 1.5em;    
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.checkbox {
+    width: 8%;
+    border: none;
+    outline: none;
+    margin-left: -0.4em;
+    background-color: #fff;
+}
+
+.form-group2, .form-indica, .form-redes, .form-google{
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 7.5em;
+    font-size: 1.5em;
+}
+
+.form-group input{
+    width: 72%;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;    
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.btnMenos, .btnMais {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-size: large;
+    cursor: pointer;
+}
+
+.txtFuncionarios{
+    padding: 10px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    font-size: medium;
+}
+
+#enviar{
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+#enviar:hover{
+    background-color: #9C04ED;
+}
+
+#enviar:disabled{
+    background-color: #D0B7DE;
+}
+
+.btnMenos:hover{
+    background-color: #9C04ED;
+}
+
+
+.btnMais:hover{
+    background-color: #9C04ED;
+}
+
+
+/* mensagem de erro*/
+
+.error{
+    color: white;
+    background-color:red;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Alerta */
+
+.message{
+    padding:10px;
+    position: absolute;
+    background-color: #fff;
+    color: #3EA90B;
+    border-radius: 5px;
+    border: none;
+    width: 450px;
+    height: 50px;
+    margin-left: 9.4em;
+    font-size: larger;
+    text-align: center;
+    animation: slide-in-right 0.2s ;
+}
+
+@keyframes slide-in-right{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.message::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0;
+    background-color: #8701CF;
+    animation: time 5s forwards;
+}
+
+@keyframes time{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 450px) {
+
+    .logo{
+        position: absolute;
+        width: 11em;
+        height: 4em;
+        left: 2em;
+        top: 2em;
+    }
+    
+    #conteudo1{
+        background: var(--primary);
+        background-size: 100%;
+        height: 85ch;
+        color: var(--text-color);
+        flex-direction: column;
+    
+    }
+    .conteudo1-text-titulo{
+        font-size: 2em;
+        margin-bottom: 1em;
+        margin-top: 4em;
+        margin-left: 1em;
+        max-width: 80%;
+    }
+    
+    .conteudo1-text-subtitulo{
+        font-size: 1.70em;
+        margin-left: 1em;
+        font-weight: lighter;
+        max-width: 90%;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+    .imagem1{
+        width: 43em;
+        max-width: 65%;
+        margin-left: 9em;
+        margin-bottom: 3em;
+    }
+
+    #conteudo-mid{
+        background: var(--secundary);
+        background-size: 100%;
+        height: 85ch;
+        color: var(--text-color);
+        flex-direction: column;
+    }
+
+    .conteudo2-text-titulo{
+        font-size: 2em;
+        top: 27em;
+        left: 1em;
+        max-width: 80%;
+    }
+
+    .conteudo2-text-subtitulo{
+        font-size: 1.6em;
+        margin-left: 1.2em;
+        font-weight: lighter;
+        max-width: 80%;
+        margin-top: 6em;
+    }
+
+    .conteudo2-text-subtitulo-pt2{
+        font-size: 1.6em;
+        margin-left: 1.2em;
+        font-weight: lighter;
+        max-width: 80%;
+    }
+
+    .imagem2{
+        width: 43em;
+        margin-left: 20em;
+        max-width: 65%;
+        margin-bottom: .0em;
+        margin-top: .3em
+        ;
+    }
+
+    #formulario{       
+        background-size: 100%;
+        height: 100%;
+        color: var(--text-color);        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-imagem{
+        background: var(--primary);
+        width: 100%;
+        height: 50%;
+        align-content: center;
+        justify-content: space-around;
+        padding: 2em;
+    }
+    
+    .conteudo3-text{
+        background: var(--secundary);
+        width: 100%;
+        height: 50%;
+    }
+
+    .conteudo3-text-titulo{
+        font-size: 2em;
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .imagem3{
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+        size: 50em;
+    }
+
+    .conteudo3-text{
+        padding: 2em;
+    }
+    
+    .conteudo3-text-subtitulo{
+        font-size: 2em;
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    
+    .form-group {
+        font-size: 1.5em;
+        max-width: 100%;
+        margin: 0px 0px 0px 0px; 
+        margin-top: 1em;       
+    }
+    
+    .cbGoogle, .cbRedes-Sociais, .cbIndica {
+        font-size: 2em;
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .form-group2, .form-indica, .form-redes, .form-google{
+        font-size: 1em;
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+        margin-top: 1em;
+    }
+    
+    .form-group input{
+        width: 100%;
+        padding: 20px 20px;
+        border-radius: 5px;
+        border: none;
+        outline: none;    
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .btnMenos, .btnMais {
+        padding: 10px 20px;
+        margin-top: 1em;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: var(--primary);
+        color: var(--text-color);
+        font-size: large;
+    }
+    
+    .txtFuncionarios{
+        padding: 10px;
+        width: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1.2em;
+    }
+    
+    #enviar{
+        background-color: var(--primary);
+        color: var(--text-color);
+        font-size: large;
+        max-width: 95%;
+    }
+    
+    .message{
+        max-width: 95%;
+        padding: 0px 0px 0px 0px;
+        margin-left: -20px;
+        margin-top: 5px;
+    }
+
+    
+}
+

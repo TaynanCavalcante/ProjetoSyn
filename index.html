@@ -2,13 +2,107 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste Syn</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
 </head>
-<body>
+<body >
 
     
+
+
+    <!-- parte de cima da página -->
+
+    <header id="conteudo1">
+        
+        <div id="conteudo1-text">
+            <img class="logo" src="./assets/img/Logo.png" alt="Logo">
+            <h1 class="conteudo1-text-titulo">Chega de esperar o fim do mês!</h1>
+            <h2 class="conteudo1-text-subtitulo">A Empresa proporciona para seus clientes 
+                uma solução inovadora que transforma
+                 radicalmente o dia a dia do RH.</h2>
+        </div>
+        <img class="imagem1" src="./assets/img/imagem-01.png" alt="Imagem 1">
+    </header>
     
+    <!-- conteúdo do meio da página -->
+
+    <main >
+       <section id="conteudo-mid">
+            <div class="conteudo2-text">
+                <h3 class="conteudo2-text-titulo">De básico a folha Empresa não tem nada!</h3>
+                <h4 class="conteudo2-text-subtitulo">Nosso padrão de folha é o mais completo
+                do mercado!</h4> 
+                <h5 class="conteudo2-text-subtitulo-pt2">Diferente dos outros fornecedores, nossos KPI's, Workflow, Gestão de benefícios e eSocial fazem parte do sistema 
+                    Folha de Pagamentos Empresa sem custos adicionais! </h5>
+                             
+            </div>
+            <img class="imagem2" src="./assets/img/imagem-02.png" alt="Imagem 2">
+           
+       </section>
+        
+       <!-- parte inferior da página (formulário) -->
+       
+       <section id="formulario">
+            <div class="conteudo-imagem">
+                <h5 class="conteudo3-text-titulo">Quer levar a Empresa
+                para o seu dia a dia?</h5>
+                <img class="imagem3" src="./assets/img/imagem-04.png" alt="Imagem 3">
+            
+            </div>
+            <div class="conteudo3-text">
+                
+                <p class="conteudo3-text-subtitulo" >Deixa aqui seus dados que 
+                    entraremos em contato!</p>
+                <form > 
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input class="txtNome" id="nome"onkeyup="onKeyUpName()" type="text" >
+                        <div class="error" id="nome-required-error">Por favor, informe seu nome completo.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class="txtEmail" id="email" onkeyup="onKeyUpEmail()" type="email" >
+                        <div class="error" id="email-required-error">Por favor, informe seu melhor e-mail.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question">Onde nos conheceu?</label>
+                    </div>                
+                    <div class="form-google">
+                        <input class="checkbox"  name="google.hit" type="checkbox" data-indeterminate="false"value="false">
+                        <span class="nmGoogle"> Google</span>
+                    </div>
+                    <div class="form-redes">
+                        <input class="checkbox"  name="google.hit" type="checkbox" data-indeterminate="false"value="false">
+                        <span class="nmRedes-Sociais"> Redes Sociais</span>
+                    </div>
+                    <div class="form-indica">
+                        <input class="checkbox" name="google.hit" type="checkbox" data-indeterminate="false"value="false">
+                        <span class="nmIndica"> Indicação</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2">Quantos Funcionários</label>
+                    </div>
+                    <div class="form-group2">
+                        <input type="button" class="btnMenos" onclick="diminuirValor()" value="-">
+                        <input type="text" class="txtFuncionarios" id="valor" value="10">
+                        <input type="button" class="btnMais" onclick="aumentarValor()" value="+">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btnEnviar" id="enviar" disabled="true">Enviar</button>
+                    </div>
+                    <div class="alert" ></div>
+
+                </form>                      
+                             
+            </div>
+       </section>
+     
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    
+
 </body>
 </html>
